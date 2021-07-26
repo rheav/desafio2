@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Ovo&display=swap" rel="stylesheet" />
+    <title>Calmei - Cadastro de Sessão</title>
+  </head>
+  <header><img src="/img/logo_wide_black.png" alt="" /></header>
+  <body>
+    <div class="row">
+      <div class="col col-1">
+        <h2>Cadastro do Usuário</h2>
+        <label for="nome">Nome do Usuário</label>
+        <input id="nomeCompleto" type="text" placeholder="Nome Completo" />
+        <label for="email">e-mail</label>
+        <input id="email" type="email" placeholder="e-mail" />
+        <label for="endereco">Endereço</label>
+        <input id="endereco" type="text" placeholder="Endereço" />
+        <label for="sessao">Data Primeira Sessão</label>
+        <input id="sessao" type="text" placeholder="DD/MM/AAAA" />
+        <a href="#" id="btn-user" class="btn btn-go">Salvar Info</a>
+      </div>
+      <div class="col col-2">
+        <h2>Cadastro da Sessão</h2>
+        <label for="nomeSessao">Título da Sessão</label>
+        <input id="nomeSessao" type="text" placeholder="Título da Sessão" />
+        <label for="codSessao">ID da sessão</label>
+        <input id="codSessao" type="text" placeholder="ID da sessão" />
+        <label for="duracao">Duração da Sessão</label>
+        <input id="duracao" type="text" placeholder="ex: 50 minutos" />
+        <label for="preco">Preço da Sessão</label>
+        <input id="preco" type="text" placeholder="em R$" style="text-transform: unset" />
+        <a href="#" id="btn-product" class="btn btn-go">Salvar Info</a>
+      </div>
+      <div class="col col-3">
+        <h2>Últimos Cadastros Feitos</h2>
+        <div class="container-resultados">
+          <h3>Usuário</h3>
+          <div>Nome: <span id="last-user"></span> </div>
+          <div>Primeira Sessão: <span id="last-session"></span> </span>
+        </div>
+
+        <div class="container-resultados">
+          <h3>Sessão</h3>
+          <div>Título: <span id="last-session-title"></span> </div>
+          <div>ID: <span id="last-session-id"></span> </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script type="text/javascript" src="script.js"></script>

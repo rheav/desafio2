@@ -1,0 +1,135 @@
+* {
+  font-family: montserrat, sans-serif;
+}
+
+body {
+  padding: 2rem;
+}
+
+h1 {
+  font-family: ovo, serif;
+  text-align: center;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+header img {
+  max-width: 30%;
+  display: block;
+  margin: 0 auto 2rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.col {
+  border: 0px solid blue;
+  height: 450px;
+  width: 30%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 7px;
+  padding: 1rem 2rem;
+  margin: 0 1rem;
+  text-transform: lowercase;
+}
+
+.col h2 {
+  font-weight: 500;
+  text-align: center;
+}
+
+input,
+label {
+  text-transform: lowercase;
+}
+
+input {
+  display: block;
+  margin: 0.3rem 0 1rem;
+  border-radius: 7px;
+  height: 1.7rem;
+  padding: 0.1rem 1rem;
+  border: 3px solid black;
+}
+
+.col-1 {
+  background-color: #eaf9ff;
+}
+
+.col-1 input {
+  background-color: #f8fdff;
+  border-color: #8ed6f5;
+}
+
+.col-2 {
+  background-color: #fff5e8;
+}
+
+.col-2 input {
+  background-color: #faf5ee;
+  border-color: #f3d8b6;
+}
+
+.col-3 {
+  background-color: #efe1f7;
+  text-transform: lowercase;
+}
+
+.btn {
+  max-width: 300px;
+  height: 30px;
+  border: 1px solid #222;
+  border-radius: 7px;
+  color: #222;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: block;
+  margin: 1.5rem auto 0.5rem;
+  text-align: center;
+  line-height: 30px;
+  transition: 0.3s all;
+}
+
+.btn-go {
+  border: 1px solid #fcd871;
+  background-color: #fcd871;
+}
+
+.btn-go:hover {
+  border: 1px solid #56c5f5;
+  background-color: #56c5f5;
+  color: #fff;
+}
+
+/*--------------------------------------*/
+
+@media (max-width: 968px) {
+  body {
+    padding: 0;
+  }
+
+  header img {
+    max-width: 90%;
+    display: block;
+    margin: 2rem auto 1rem;
+  }
+
+  .row {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .col {
+    height: 450px;
+    width: 90%;
+    display: block;
+    margin: 1.5rem auto;
+    padding: 1rem;
+  }
+}
